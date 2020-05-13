@@ -1,0 +1,135 @@
+/*Reset leve do CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    font-family: 'Sacramento', cursive;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Squada One', cursive;
+*/
+body{
+    background-color: #111d4a;
+    background-size: auto 100vh;
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    font-size: 10px;
+}
+
+/*Se a tela tiver pelo menos 400px ela vai carregar esses estilos*/
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    /*background-color: red;*/
+    
+    display: block;
+    margin: 1px;
+    padding: 5px 4em;
+    color: black;
+}
+
+header a{
+    display: flex;
+    justify-content: space-around;
+}
+.img-codigos{
+    border-radius: 50%;
+    border: 1px solid black;
+    color:rgb(253, 253, 65);
+    height: 3.5em;
+    width: 3.5em;
+}
+.img-codigos:hover{
+    box-shadow: 0px 0px 10px 1px;
+}
+  
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+  
+.site-subtitle,
+.site-title{
+    color: whitesmoke;
+    text-align: center;
+}
+.site-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+}  
+.site-subtitle{
+    font-family: 'Squada One', cursive;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.portfolio{
+    background-color: #E1E5F2;
+    height: 100vh;
+}
+.img-portfolio{
+    height: 130px;
+    width: 180px;
+    object-fit: cover;
+}
+.portfolio figure{
+    text-align: center; 
+    padding: 10px;
+}
+.portfolio h2{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    gap: 1em;
+    height: 50vh;
+    align-content: center bottom;
+    justify-content: center;
+}
+
+@media (min-width: 412px){
+    .grid{
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+@media (min-width: 605px){
+    .grid{
+        grid-template-columns: repeat(3, 180px);
+    }
+}
+@media (min-width: 1200px){
+    .img-portfolio{
+        height: auto;
+        width: 100%;
+    }
+}
