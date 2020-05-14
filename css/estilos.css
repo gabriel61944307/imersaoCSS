@@ -116,6 +116,9 @@ a:hover{
     text-align: center;
     color: whitesmoke;
 }
+.portfolio a{
+    color: #879ee9;
+}
 .img-portfolio{
     border-radius: 12%;
     border: 1px solid black;
