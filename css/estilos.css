@@ -65,6 +65,7 @@ header{
 .contato h2{
     text-align: center;
     line-height: 4em;
+    color: whitesmoke;
 }
 .contato a{
     color: whitesmoke;
@@ -113,6 +114,7 @@ a:hover{
 .portfolio h2{
     line-height: 4em;
     text-align: center;
+    color: whitesmoke;
 }
 .img-portfolio{
     border-radius: 12%;
