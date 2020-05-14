@@ -49,26 +49,41 @@ header{
     /*background-color: red;*/
     
     display: block;
-    margin: 1px;
+    font-weight: bold;
     padding: 5px 4em;
     color: black;
+    transition: background-color, color, 0.8s;
+}
+.menu a:hover{
+    background-color: #111d4a;
+    color: whitesmoke;
 }
 
-header a{
-    display: flex;
-    justify-content: space-around;
+.contato{
+    height: 100vh;
 }
-.img-codigos{
-    border-radius: 50%;
-    border: 1px solid black;
-    color:rgb(253, 253, 65);
-    height: 3.5em;
-    width: 3.5em;
+.contato h2{
+    text-align: center;
+    line-height: 4em;
 }
-.img-codigos:hover{
-    box-shadow: 0px 0px 10px 1px;
+.contato a{
+    color: whitesmoke;
+    font-size: 3em;
+    height: 1.2em;
+    transition: text-shadow, 0.8s;
 }
-  
+.contato a:active,
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: greenyellow 0px 0px 20px;
+}
+.contato .icons{
+    text-align: center;
+}
+.contato .grid{
+    height: 1.2vh;
+}
+
 a{
     text-decoration: none;
 }
@@ -89,24 +104,30 @@ a:hover{
     font-family: 'Squada One', cursive;
     font-style: italic;
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .portfolio{
     background-color: #E1E5F2;
-    height: 100vh;
+    min-height: 100vh;
+}
+.portfolio h2{
+    line-height: 4em;
+    text-align: center;
 }
 .img-portfolio{
+    border-radius: 12%;
     height: 130px;
     width: 180px;
     object-fit: cover;
+    transition: transform 0.5s;
+}
+.img-portfolio:hover{
+    transform: scale(1.1);
 }
 .portfolio figure{
     text-align: center; 
     padding: 10px;
-}
-.portfolio h2{
-    text-align: center;
 }
 
 .grid{
