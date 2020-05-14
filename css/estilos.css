@@ -50,7 +50,7 @@ header{
     
     display: block;
     font-weight: bold;
-    padding: 5px 4em;
+    padding: 5px 2em;
     color: black;
     transition: background-color, color, 0.8s;
 }
@@ -108,7 +108,6 @@ a:hover{
 }
 
 .portfolio{
-    background-color: #E1E5F2;
     min-height: 100vh;
 }
 .portfolio h2{
@@ -117,11 +116,13 @@ a:hover{
 }
 .img-portfolio{
     border-radius: 12%;
+    border: 1px solid black;
     height: 130px;
     width: 180px;
     object-fit: cover;
     transition: transform 0.5s;
 }
+.img-portfolio:active,
 .img-portfolio:hover{
     transform: scale(1.1);
 }
