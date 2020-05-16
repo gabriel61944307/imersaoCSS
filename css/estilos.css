@@ -59,14 +59,55 @@ header{
     color: whitesmoke;
 }
 
+.sobre,
+.portfolio,
 .contato{
-    height: 100vh;
+    min-height: 100vh;
 }
+
+@media (min-width: 1200px){
+    .sobre,
+    .portfolio,
+    .contato{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
+
+
+.sobre h2,
+.portfolio h2,
 .contato h2{
     text-align: center;
     line-height: 4em;
     color: whitesmoke;
 }
+
+.sobre p{
+    text-align: justify;
+    margin-bottom: 1em;
+    color: white;
+    text-indent: 2em;
+}
+.sobre .perfil{
+    float: left;
+    margin-right: 2em;
+}
+.sobre .perfil img{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.sobre a{
+    font-weight: bold;
+    color:magenta;
+    text-decoration: underline;
+}
+.sobre a:hover{
+    color: black;
+    background-color: orangered;
+}
+
 .contato a{
     color: whitesmoke;
     font-size: 3em;
@@ -108,14 +149,6 @@ a:hover{
     line-height: 2em;
 }
 
-.portfolio{
-    min-height: 100vh;
-}
-.portfolio h2{
-    line-height: 4em;
-    text-align: center;
-    color: whitesmoke;
-}
 .portfolio a{
     color: #879ee9;
 }
